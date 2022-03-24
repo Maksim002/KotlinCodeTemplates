@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/galleryFragment">
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.kotlincodetemplates.ui.gallery.GalleryFragment"
+        android:label="Gallery"
+        tools:layout="@layout/fragment_gallery">
+        <action
+            android:id="@+id/action_galleryFragment_to_scrollFragment2"
+            app:destination="@id/scrollFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.example.kotlincodetemplates.ui.web.WebViewFragment"
+        android:label="Installing Android Studio"
+        tools:layout="@layout/fragment_web_view"/>
+
+    <fragment
+        android:id="@+id/scrollFragment"
+        android:name="com.example.kotlincodetemplates.ui.scrollVertical.ScrollVertical"
+        android:label="Scroll Vertical"
+        tools:layout="@layout/fragment_scroll_vertical"/>
+</navigation>
