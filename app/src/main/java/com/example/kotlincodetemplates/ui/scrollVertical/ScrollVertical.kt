@@ -4,25 +4,38 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.example.kotlincodetemplates.R
 import com.example.kotlincodetemplates.base.BaseFragment
+import kotlinx.android.synthetic.main.fragment_scroll_view.*
 
 class ScrollVertical : BaseFragment(){
+    private val bundle = Bundle()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_scroll_vertical, container, false)
+        return inflater.inflate(R.layout.fragment_scroll_view, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        onSupportNavigateUp()
-    }
 
-    private fun onSupportNavigateUp()
-            = Navigation.findNavController(requireActivity(), R.id.my_nav_com_fragment).navigateUp()
+        codeBtn.setOnClickListener {
+            bundle.putString("scroll_vertical", "code")
+            findNavController().navigate(R.id.codeScrollVerticalFragment, bundle)
+        }
+
+        xmlBtn.setOnClickListener {
+            bundle.putString("scroll_vertical", "xml")
+            findNavController().navigate(R.id.codeScrollVerticalFragment, bundle)
+        }
+
+        releaseBtn.setOnClickListener {
+            bundle.putString("scroll_vertical", "start")
+            findNavController().navigate(R.id.codeScrollVerticalFragment, bundle)
+        }
+    }
 }

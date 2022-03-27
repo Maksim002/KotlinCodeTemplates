@@ -34,14 +34,16 @@ class GalleryFragment: BaseFragment() {
             override fun setOnClickListener(position: Int) {
                 when(position){
                     0 -> Navigation.findNavController(view!!).navigate(R.id.webViewFragment)
-                    1 -> Navigation.findNavController(view!!).navigate(R.id.scrollFragment)
+                    1 -> Navigation.findNavController(view!!).navigate(R.id.scrollVerticalFragment)
+                    2 -> Navigation.findNavController(view!!).navigate(R.id.scrollHorizontalFragment)
                 }
             }
         })
 
         val list: ArrayList<GalleryModel> = arrayListOf()
         list.add(GalleryModel("Installing Android", R.drawable.ic_installing))
-        list.add(GalleryModel("Scroll View", R.drawable.ic_scroll_view))
+        list.add(GalleryModel("Scroll Vertical", R.drawable.ic_scroll_view))
+        list.add(GalleryModel("Scroll Horizontal", R.drawable.ic_scroll_view))
 
         adapters.update(list)
         recyclerView.adapter = adapters

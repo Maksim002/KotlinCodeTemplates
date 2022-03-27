@@ -13,7 +13,8 @@
         android:gravity="center"
         android:text="What is Android? Here's everything you need to know"
         android:textColor="@color/white"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -24,7 +25,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:textColor="@color/white"
         android:text="@string/text_title"
         android:textSize="14sp" />
@@ -32,7 +32,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:textColor="@color/white"
         android:text="@string/text_description"
         android:textSize="14sp" />
@@ -40,7 +39,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:textColor="@color/white"
         android:text="@string/text_description_1"
         android:textSize="14sp" />
@@ -49,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="25dp"
         android:text="What is Android? Here are the basics"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -58,7 +56,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:textColor="@color/white"
         android:text="@string/text_description_2"
         android:textSize="14sp" />
@@ -66,7 +63,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:textColor="@color/white"
         android:text="@string/text_description_3"
         android:textSize="14sp" />
@@ -74,7 +70,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:textColor="@color/white"
         android:gravity="center"
         android:text="Download Android Studio - The official Android IDE"

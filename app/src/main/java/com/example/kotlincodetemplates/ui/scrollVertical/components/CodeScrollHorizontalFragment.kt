@@ -16,7 +16,7 @@ import com.pddstudio.highlightjs.models.Theme
 import kotlinx.android.synthetic.main.fragment_code_scroll.*
 
 
-class CodeScrollFragment : BaseFragment(){
+class CodeScrollHorizontalFragment : BaseFragment(){
     private lateinit var db: FirebaseFirestore
 
     override fun onCreateView(
@@ -31,11 +31,11 @@ class CodeScrollFragment : BaseFragment(){
         super.onViewCreated(view, savedInstanceState)
         alertDialog.show()
         db = FirebaseFirestore.getInstance()
-        db.collection("user").addSnapshotListener { value, error ->
+        db.collection("scroll_horizontal").addSnapshotListener { value, error ->
             error?.message
             val result = value!!.documents[0].toObject(ModelElements::class.java)
             val sendPicture = try {
-                requireArguments().getString("user")
+                requireArguments().getString("scroll_horizontal")
             } catch (e: Exception) {
                 ""
             }

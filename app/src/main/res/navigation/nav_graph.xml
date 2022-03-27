@@ -12,10 +12,13 @@
         tools:layout="@layout/fragment_gallery">
         <action
             android:id="@+id/action_galleryFragment_to_scrollFragment2"
-            app:destination="@id/scrollFragment" />
+            app:destination="@id/scrollVerticalFragment" />
         <action
             android:id="@+id/action_galleryFragment_to_webViewFragment"
             app:destination="@id/webViewFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_scrollHorizontalFragment"
+            app:destination="@id/scrollHorizontalFragment" />
     </fragment>
 
     <fragment
@@ -25,8 +28,35 @@
         tools:layout="@layout/fragment_web_view"/>
 
     <fragment
-        android:id="@+id/scrollFragment"
+        android:id="@+id/scrollVerticalFragment"
         android:name="com.example.kotlincodetemplates.ui.scrollVertical.ScrollVertical"
         android:label="Scroll Vertical"
-        tools:layout="@layout/fragment_scroll_vertical"/>
+        tools:layout="@layout/fragment_scroll_view">
+        <action
+            android:id="@+id/action_scrollFragment_to_codeScrollFragment"
+            app:destination="@id/codeScrollVerticalFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/codeScrollVerticalFragment"
+        android:name="com.example.kotlincodetemplates.ui.scrollVertical.components.CodeScrollVerticalFragment"
+        android:label="Gallery"
+        tools:layout="@layout/fragment_code_scroll" />
+
+    <fragment
+        android:id="@+id/scrollHorizontalFragment"
+        android:name="com.example.kotlincodetemplates.ui.scrollVertical.ScrollHorizontal"
+        android:label="Scroll Horizontal"
+        tools:layout="@layout/fragment_scroll_view">
+        <action
+            android:id="@+id/action_scrollFragment_to_codeScrollFragment"
+            app:destination="@id/codeScrollHorizontalFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/codeScrollHorizontalFragment"
+        android:name="com.example.kotlincodetemplates.ui.scrollVertical.components.CodeScrollHorizontalFragment"
+        android:label="Gallery"
+        tools:layout="@layout/fragment_code_scroll" />
+
 </navigation>
