@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates/app/src/main/res/drawable/splash_screen.xml" value="0.1335" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates/app/src/main/res/layout/alert_loading.xml" value="0.18055555555555555" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_scroll.xml" value="0.18055555555555555" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates/app/src/main/res/layout/fragment_gallery.xml" value="0.18055555555555555" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates/app/src/main/res/layout/fragment_scroll_vertical.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates/app/src/main/res/layout/fragment_xml_scroll.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates/app/src/main/res/layout/item_gallery.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates/app/src/main/res/layout/item_general_model.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/drawable/circle_background_bottom.xml" value="0.172" />
         <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />

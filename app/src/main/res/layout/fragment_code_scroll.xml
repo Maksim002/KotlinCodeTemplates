@@ -1,38 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@color/black"
+    android:background="@color/darkBlack"
     android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
         <TextView
+            android:id="@+id/codeText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:gravity="center"
+            android:padding="16dp"
+            android:visibility="gone"
             android:textSize="20sp"
-            android:text="Cod"/>
+            android:text="@string/structure_code_title"/>
 
         <com.pddstudio.highlightjs.HighlightJsView
             android:id="@+id/codeViewHigh"
             android:layout_width="match_parent"
+            android:visibility="gone"
             android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/xmlText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:gravity="center"
+            android:padding="16dp"
+            android:visibility="gone"
             android:textSize="20sp"
-            android:text="Xml"/>
+            android:text="@string/structure_style_title"/>
 
         <com.pddstudio.highlightjs.HighlightJsView
             android:id="@+id/xmlViewHigh"
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-    </LinearLayout>
-</androidx.core.widget.NestedScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <include layout="@layout/item_general_model"/>
+
+                </LinearLayout>
+        </ScrollView>
+</LinearLayout>

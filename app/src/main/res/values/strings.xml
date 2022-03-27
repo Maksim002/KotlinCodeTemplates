@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">KotlinCodeTemplates</string>
+    <string name="code_structures_text">The window contains complete information about the structure of the object model creation code</string>
+    <string name="xml_structures_text">The window contains complete information about the style of the object model creation code</string>
+    <string name="final_model">Here you can see the final model in the launch</string>
+    <string name="structure_code_title">Structure Code</string>
+    <string name="structure_style_title">Structure style</string>
+    <string name="text_title">\n By now, most people know there are two major mobile operating systems: Google’s Android and Apple’s iOS. There used to be a lot more, but now pretty much every major mobile device runs one or the other. This is a site with “Android” in its name, so we might have visitors wondering: “What is Android?” That’s a huge question, and we’ll answer it as thoroughly as possible here!</string>
+    <string name="text_description">\n Even if you’re a smartphone pro, there could be a lot to learn in the sections below. But if you’re new to the world of smartphones — or just the world of Android — this is the perfect place to get up-to-speed on the world’s most popular operating system.</string>
+    <string name="text_description_1">\n Android is a mobile operating system that has been around for nearly 15 years. You’ll primarily find it as the base operating system of phones and tablets worldwide. Additionally, other operating systems natively support Android applications, including Chrome OS and Windows 11 operation system.</string>
+    <string name="text_description_2">\n Search giant Google owns this mobile OS. However, the system is open source, making it freely accessible to anyone, even for commercial use. This makes it very different from Apple’s iOS, macOS, and Microsoft’s Windows, all closed-source platforms.</string>
+    <string name="text_description_3">\n Anyway, the Android operating system is one of the best in the world. Perhaps the best in the world, which can indirectly confirm its popularity.</string>
 </resources>
