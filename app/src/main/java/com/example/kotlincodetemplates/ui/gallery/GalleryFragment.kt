@@ -35,15 +35,15 @@ class GalleryFragment: BaseFragment() {
                 when(position){
                     0 -> Navigation.findNavController(view!!).navigate(R.id.webViewFragment)
                     1 -> Navigation.findNavController(view!!).navigate(R.id.scrollVerticalFragment)
-                    2 -> Navigation.findNavController(view!!).navigate(R.id.scrollHorizontalFragment)
+                    2 -> Navigation.findNavController(view!!).navigate(R.id.progressBarFragment)
                 }
             }
         })
 
         val list: ArrayList<GalleryModel> = arrayListOf()
         list.add(GalleryModel("Installing Android", R.drawable.ic_installing))
-        list.add(GalleryModel("Scroll Vertical", R.drawable.ic_scroll_view))
-        list.add(GalleryModel("Scroll Horizontal", R.drawable.ic_scroll_view))
+        list.add(GalleryModel("Scroll View", R.drawable.ic_scroll_view))
+        list.add(GalleryModel("Progress Bar", R.drawable.ic_progress))
 
         adapters.update(list)
         recyclerView.adapter = adapters

@@ -2,6 +2,7 @@
     <string name="app_name">KotlinCodeTemplates</string>
     <string name="code_structures_text">The window contains complete information about the structure of the object model creation code</string>
     <string name="xml_structures_text">The window contains complete information about the style of the object model creation code</string>
+    <string name="final_model_the">The display of the written code is implemented here</string>
     <string name="final_model">Here you can see the final model in the launch</string>
     <string name="structure_code_title">Structure Code</string>
     <string name="structure_style_title">Structure style</string>

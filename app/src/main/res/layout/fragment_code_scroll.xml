@@ -39,19 +39,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <HorizontalScrollView
-            android:id="@+id/scrollView"
+        <WebView
+            android:id="@+id/webViewStile"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="gone">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                        <include layout="@layout/item_general_model"/>
-
-                </LinearLayout>
-        </HorizontalScrollView>
+            android:visibility="gone"
+            android:layout_height="match_parent"/>
 </LinearLayout>

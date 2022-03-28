@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/darkBlack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/codeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        android:text="@string/code_structures_text"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/xmlBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:text="@string/xml_structures_text"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/progressDisplayBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:text="@string/final_model_the"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/releaseBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:text="@string/final_model"
+        android:textSize="14sp"/>
+</LinearLayout>
