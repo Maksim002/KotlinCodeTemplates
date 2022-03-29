@@ -36,6 +36,8 @@ class GalleryFragment: BaseFragment() {
                     0 -> Navigation.findNavController(view!!).navigate(R.id.webViewFragment)
                     1 -> Navigation.findNavController(view!!).navigate(R.id.scrollVerticalFragment)
                     2 -> Navigation.findNavController(view!!).navigate(R.id.progressBarFragment)
+                    3 -> Navigation.findNavController(view!!).navigate(R.id.cardViewFragment)
+                    4 -> Navigation.findNavController(view!!).navigate(R.id.buttonFragment)
                 }
             }
         })
@@ -44,6 +46,8 @@ class GalleryFragment: BaseFragment() {
         list.add(GalleryModel("Installing Android", R.drawable.ic_installing))
         list.add(GalleryModel("Scroll View", R.drawable.ic_scroll_view))
         list.add(GalleryModel("Progress Bar", R.drawable.ic_progress))
+        list.add(GalleryModel("Card View", R.drawable.ic_card))
+        list.add(GalleryModel("Button", R.drawable.ic_button))
 
         adapters.update(list)
         recyclerView.adapter = adapters

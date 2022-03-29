@@ -43,22 +43,26 @@ class CodeScrollVerticalFragment : BaseFragment(){
             } catch (e: Exception) {
                 ""
             }
-            if (sendPicture == "code"){
-                codeText.isVisible = true
-                codeViewHigh.isVisible = true
-                codeViewHigh.theme = Theme.ANDROID_STUDIO
-                codeViewHigh.highlightLanguage = Language.AUTO_DETECT
-                codeViewHigh.setBackgroundColor(resources.getColor(R.color.darkBlack))
-                codeViewHigh.setSource(deletingCharacters(result!!.code!!))
-            }else if (sendPicture == "xml"){
-                xmlText.isVisible = true
-                xmlViewHigh.isVisible = true
-                xmlViewHigh.theme = Theme.ANDROID_STUDIO
-                xmlViewHigh.highlightLanguage = Language.AUTO_DETECT
-                xmlViewHigh.setBackgroundColor(resources.getColor(R.color.darkBlack))
-                xmlViewHigh.setSource(deletingCharacters(result!!.xml!!))
-            }else if (sendPicture == "start"){
-                initWebView()
+            when (sendPicture) {
+                "code" -> {
+                    codeViewHigh.theme = Theme.ANDROID_STUDIO
+                    codeViewHigh.highlightLanguage = Language.AUTO_DETECT
+                    codeViewHigh.setBackgroundColor(resources.getColor(R.color.darkBlack))
+                    codeViewHigh.setSource(deletingCharacters(result!!.code!!))
+                    codeText.isVisible = true
+                    codeViewHigh.isVisible = true
+                }
+                "xml" -> {
+                    xmlViewHigh.theme = Theme.ANDROID_STUDIO
+                    xmlViewHigh.highlightLanguage = Language.AUTO_DETECT
+                    xmlViewHigh.setBackgroundColor(resources.getColor(R.color.darkBlack))
+                    xmlViewHigh.setSource(deletingCharacters(result!!.xml!!))
+                    xmlText.isVisible = true
+                    xmlViewHigh.isVisible = true
+                }
+                "start" -> {
+                    initWebView()
+                }
             }
 
             Handler().postDelayed(Runnable { // Do something after 5s = 500ms

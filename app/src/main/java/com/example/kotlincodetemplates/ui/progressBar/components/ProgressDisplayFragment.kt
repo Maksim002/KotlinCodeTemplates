@@ -10,7 +10,7 @@ import com.example.kotlincodetemplates.base.BaseFragment
 import kotlinx.android.synthetic.main.fragment_progress_display.*
 import java.lang.Exception
 
-class ProgressDisplay : BaseFragment() {
+class ProgressDisplayFragment : BaseFragment() {
     private var progressStatus = 0
     private var handler = Handler()
     lateinit var myThread: Thread

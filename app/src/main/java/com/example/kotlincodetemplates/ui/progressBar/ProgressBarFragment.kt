@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.fragment_scroll_view.codeBtn
 import kotlinx.android.synthetic.main.fragment_scroll_view.releaseBtn
 import kotlinx.android.synthetic.main.fragment_scroll_view.xmlBtn
 
-class ProgressBar: BaseFragment() {
+class ProgressBarFragment: BaseFragment() {
     private val bundle = Bundle()
 
     override fun onCreateView(

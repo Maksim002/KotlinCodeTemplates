@@ -1,4 +1,4 @@
-package com.example.kotlincodetemplates.ui.progressBar.components
+package com.example.kotlincodetemplates.ui.card.components
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -17,10 +17,10 @@ import com.example.kotlincodetemplates.utils.MyConverters
 import com.google.firebase.firestore.FirebaseFirestore
 import com.pddstudio.highlightjs.models.Language
 import com.pddstudio.highlightjs.models.Theme
-import kotlinx.android.synthetic.main.fragment_code_progress_bar.*
+import kotlinx.android.synthetic.main.fragment_card_bar.*
 
-class CodeProgressBarFragment : BaseFragment() {
-    var url = "https://guides.codepath.com/android/handling-progressbars"
+class CodeCardFragment : BaseFragment() {
+    var url = "https://guides.codepath.com/android/Using-the-CardView"
     private lateinit var db: FirebaseFirestore
 
     override fun onCreateView(
@@ -28,18 +28,18 @@ class CodeProgressBarFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_code_progress_bar, container, false)
+        return inflater.inflate(R.layout.fragment_card_bar, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         alertDialog.show()
         db = FirebaseFirestore.getInstance()
-        db.collection("progress_bar").addSnapshotListener { value, error ->
+        db.collection("card_view").addSnapshotListener { value, error ->
             error?.message
             val result = value!!.documents[0].toObject(ModelElements::class.java)
             val sendPicture = try {
-                requireArguments().getString("progress_bar")
+                requireArguments().getString("card_view")
             } catch (e: Exception) {
                 ""
             }
