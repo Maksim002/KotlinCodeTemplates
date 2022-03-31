@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_galleryFragment_to_cardViewFragment"
             app:destination="@id/cardViewFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_buttonFragment"
+            app:destination="@id/buttonFragment" />
     </fragment>
 
 
@@ -118,5 +121,24 @@
         android:name="com.example.kotlincodetemplates.ui.bottom.ButtonFragment"
         android:label="Scroll Display"
         tools:layout="@layout/fragment_card_view">
+        <action
+            android:id="@+id/action_buttonFragment_to_codeButtonFragment"
+            app:destination="@id/codeButtonFragment" />
+        <action
+            android:id="@+id/action_buttonFragment_to_buttonDisplayFragment"
+            app:destination="@id/buttonDisplayFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/codeButtonFragment"
+        android:name="com.example.kotlincodetemplates.ui.bottom.components.CodeButtonFragment"
+        android:label="Scroll Display"
+        tools:layout="@layout/fragment_code_button"/>
+
+    <fragment
+        android:id="@+id/buttonDisplayFragment"
+        android:name="com.example.kotlincodetemplates.ui.bottom.components.ButtonDisplayFragment"
+        android:label="Scroll Display"
+        tools:layout="@layout/fragment_button_display">
     </fragment>
 </navigation>

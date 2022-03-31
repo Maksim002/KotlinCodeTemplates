@@ -24,22 +24,22 @@ class ButtonFragment  : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         codeBtn.setOnClickListener {
-            bundle.putString("card_view", "code")
-            findNavController().navigate(R.id.codeCardFragment, bundle)
+            bundle.putString("button_view", "code")
+            findNavController().navigate(R.id.codeButtonFragment, bundle)
         }
 
         xmlBtn.setOnClickListener {
-            bundle.putString("card_view", "xml")
-            findNavController().navigate(R.id.codeCardFragment, bundle)
+            bundle.putString("button_view", "xml")
+            findNavController().navigate(R.id.codeButtonFragment, bundle)
         }
 
         progressDisplayBtn.setOnClickListener {
-            findNavController().navigate(R.id.cardDisplayFragment)
+            findNavController().navigate(R.id.buttonDisplayFragment)
         }
 
         releaseBtn.setOnClickListener {
-            bundle.putString("card_view", "start")
-            findNavController().navigate(R.id.codeCardFragment, bundle)
+            bundle.putString("button_view", "start")
+            findNavController().navigate(R.id.codeButtonFragment, bundle)
         }
     }
 }

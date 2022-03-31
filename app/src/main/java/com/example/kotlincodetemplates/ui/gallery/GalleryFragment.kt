@@ -47,7 +47,7 @@ class GalleryFragment: BaseFragment() {
         list.add(GalleryModel("Scroll View", R.drawable.ic_scroll_view))
         list.add(GalleryModel("Progress Bar", R.drawable.ic_progress))
         list.add(GalleryModel("Card View", R.drawable.ic_card))
-        list.add(GalleryModel("Button", R.drawable.ic_button))
+        list.add(GalleryModel("Button", R.drawable.ic_baseline_touch_app_24))
 
         adapters.update(list)
         recyclerView.adapter = adapters
