@@ -11,4 +11,6 @@
     <string name="text_description_1">\n Android is a mobile operating system that has been around for nearly 15 years. You’ll primarily find it as the base operating system of phones and tablets worldwide. Additionally, other operating systems natively support Android applications, including Chrome OS and Windows 11 operation system.</string>
     <string name="text_description_2">\n Search giant Google owns this mobile OS. However, the system is open source, making it freely accessible to anyone, even for commercial use. This makes it very different from Apple’s iOS, macOS, and Microsoft’s Windows, all closed-source platforms.</string>
     <string name="text_description_3">\n Anyway, the Android operating system is one of the best in the world. Perhaps the best in the world, which can indirectly confirm its popularity.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

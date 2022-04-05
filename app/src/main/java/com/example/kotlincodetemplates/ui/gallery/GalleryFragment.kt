@@ -38,6 +38,7 @@ class GalleryFragment: BaseFragment() {
                     2 -> Navigation.findNavController(view!!).navigate(R.id.progressBarFragment)
                     3 -> Navigation.findNavController(view!!).navigate(R.id.cardViewFragment)
                     4 -> Navigation.findNavController(view!!).navigate(R.id.buttonFragment)
+                    5 -> Navigation.findNavController(view!!).navigate(R.id.listFragment)
                 }
             }
         })
@@ -48,6 +49,7 @@ class GalleryFragment: BaseFragment() {
         list.add(GalleryModel("Progress Bar", R.drawable.ic_progress))
         list.add(GalleryModel("Card View", R.drawable.ic_card))
         list.add(GalleryModel("Button", R.drawable.ic_baseline_touch_app_24))
+        list.add(GalleryModel("List View", R.drawable.ic_list))
 
         adapters.update(list)
         recyclerView.adapter = adapters

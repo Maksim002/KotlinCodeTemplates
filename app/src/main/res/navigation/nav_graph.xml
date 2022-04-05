@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_galleryFragment_to_buttonFragment"
             app:destination="@id/buttonFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_listFragment"
+            app:destination="@id/listFragment" />
     </fragment>
 
 
@@ -40,11 +43,11 @@
     <fragment
         android:id="@+id/scrollVerticalFragment"
         android:name="com.example.kotlincodetemplates.ui.scrollVertical.ScrollVerticalFragment"
-        android:label="Scroll Vertical"
+        android:label="Scroll View"
         tools:layout="@layout/fragment_scroll_view">
         <action
             android:id="@+id/action_scrollVerticalFragment_to_progressDisplayFragment"
-            app:destination="@id/progressDisplayFragment" />
+            app:destination="@id/scrollDisplayFragment" />
         <action
             android:id="@+id/action_scrollVerticalFragment_to_codeScrollVerticalFragment"
             app:destination="@id/codeScrollVerticalFragment" />
@@ -57,10 +60,10 @@
         tools:layout="@layout/fragment_code_scroll"/>
 
     <fragment
-        android:id="@+id/progressDisplayFragment"
-        android:name="com.example.kotlincodetemplates.ui.progressBar.components.ProgressDisplayFragment"
-        android:label="Progress Display"
-        tools:layout="@layout/fragment_progress_display"/>
+        android:id="@+id/scrollDisplayFragment"
+        android:name="com.example.kotlincodetemplates.ui.scrollVertical.components.ScrollDisplayFragment"
+        android:label="Scroll Presenter"
+        tools:layout="@layout/fragment_scroll_display"/>
 
 
 
@@ -71,7 +74,7 @@
         tools:layout="@layout/fragment_progress_bar">
         <action
             android:id="@+id/action_progressBarFragment_to_scrollDisplayFragment2"
-            app:destination="@id/scrollDisplayFragment" />
+            app:destination="@id/progressDisplayFragment" />
         <action
             android:id="@+id/action_progressBarFragment_to_codeProgressBarFragment"
             app:destination="@id/codeProgressBarFragment" />
@@ -84,16 +87,15 @@
         tools:layout="@layout/fragment_code_progress_bar" />
 
     <fragment
-        android:id="@+id/scrollDisplayFragment"
-        android:name="com.example.kotlincodetemplates.ui.scrollVertical.components.ScrollDisplayFragment"
-        android:label="Scroll Display"
-        tools:layout="@layout/fragment_scroll_display"/>
-
+        android:id="@+id/progressDisplayFragment"
+        android:name="com.example.kotlincodetemplates.ui.progressBar.components.ProgressDisplayFragment"
+        android:label="Progress Presenter"
+        tools:layout="@layout/fragment_progress_display"/>
 
     <fragment
         android:id="@+id/cardViewFragment"
         android:name="com.example.kotlincodetemplates.ui.card.CardViewFragment"
-        android:label="Scroll Display"
+        android:label="Card View"
         tools:layout="@layout/fragment_card_view">
         <action
             android:id="@+id/action_cardViewFragment_to_codeCardFragment"
@@ -112,14 +114,14 @@
     <fragment
         android:id="@+id/cardDisplayFragment"
         android:name="com.example.kotlincodetemplates.ui.card.components.CardDisplayFragment"
-        android:label="Card Display"
+        android:label="Card Presenter"
         tools:layout="@layout/fragment_card_display"/>
 
 
     <fragment
         android:id="@+id/buttonFragment"
         android:name="com.example.kotlincodetemplates.ui.bottom.ButtonFragment"
-        android:label="Scroll Display"
+        android:label="Button"
         tools:layout="@layout/fragment_card_view">
         <action
             android:id="@+id/action_buttonFragment_to_codeButtonFragment"
@@ -132,13 +134,39 @@
     <fragment
         android:id="@+id/codeButtonFragment"
         android:name="com.example.kotlincodetemplates.ui.bottom.components.CodeButtonFragment"
-        android:label="Scroll Display"
+        android:label="Code Button"
         tools:layout="@layout/fragment_code_button"/>
 
     <fragment
         android:id="@+id/buttonDisplayFragment"
         android:name="com.example.kotlincodetemplates.ui.bottom.components.ButtonDisplayFragment"
-        android:label="Scroll Display"
+        android:label="Button Presenter"
         tools:layout="@layout/fragment_button_display">
     </fragment>
+
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.kotlincodetemplates.ui.list.ListFragment"
+        android:label="List View"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_codeListFragment"
+            app:destination="@id/codeListFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_codeDispleyFragment"
+            app:destination="@id/codeDisplayFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/codeListFragment"
+        android:name="com.example.kotlincodetemplates.ui.list.CodeListFragment"
+        android:label="Code List"
+        tools:layout="@layout/fragment_code_list" />
+
+    <fragment
+        android:id="@+id/codeDisplayFragment"
+        android:name="com.example.kotlincodetemplates.ui.list.CodeListDisplayFragment"
+        android:label="List View Presenter"
+        tools:layout="@layout/fragment_code_list_display" />
 </navigation>
