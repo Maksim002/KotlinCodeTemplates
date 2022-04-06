@@ -1,4 +1,4 @@
-package com.example.kotlincodetemplates.ui.list
+package com.example.kotlincodetemplates.ui.RecyclerView
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.kotlincodetemplates.R
 import com.example.kotlincodetemplates.base.BaseFragment
-import kotlinx.android.synthetic.main.fragment_list.*
+import kotlinx.android.synthetic.main.fragment_recycler_view.*
 
-class ListFragment  : BaseFragment() {
+class RecyclerViewFragment : BaseFragment() {
     private val bundle = Bundle()
 
     override fun onCreateView(
@@ -17,29 +17,29 @@ class ListFragment  : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_list, container, false)
+        return inflater.inflate(R.layout.fragment_recycler_view, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         codeBtn.setOnClickListener {
-            bundle.putString("list_view", "code")
-            findNavController().navigate(R.id.codeListFragment, bundle)
+            bundle.putString("recycler_view", "code")
+            findNavController().navigate(R.id.codeRecyclerFragment, bundle)
         }
 
         xmlBtn.setOnClickListener {
-            bundle.putString("list_view", "xml")
-            findNavController().navigate(R.id.codeListFragment, bundle)
+            bundle.putString("recycler_view", "xml")
+            findNavController().navigate(R.id.codeRecyclerFragment, bundle)
         }
 
         progressDisplayBtn.setOnClickListener {
-            findNavController().navigate(R.id.codeListDisplayFragment)
+            findNavController().navigate(R.id.codeRecyclerDisplayFragment)
         }
 
         releaseBtn.setOnClickListener {
-            bundle.putString("list_view", "start")
-            findNavController().navigate(R.id.codeListFragment, bundle)
+            bundle.putString("recycler_view", "start")
+            findNavController().navigate(R.id.codeRecyclerFragment, bundle)
         }
     }
 }
