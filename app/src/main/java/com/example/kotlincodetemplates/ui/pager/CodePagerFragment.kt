@@ -1,4 +1,4 @@
-package com.example.kotlincodetemplates.ui.RecyclerView
+package com.example.kotlincodetemplates.ui.pager
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -17,10 +17,10 @@ import com.example.kotlincodetemplates.utils.MyConverters
 import com.google.firebase.firestore.FirebaseFirestore
 import com.pddstudio.highlightjs.models.Language
 import com.pddstudio.highlightjs.models.Theme
-import kotlinx.android.synthetic.main.fragment_code_recycler.*
+import kotlinx.android.synthetic.main.fragment_code_pager.*
 
-class CodeRecyclerFragment : BaseFragment() {
-    var url = "https://guides.codepath.com/android/using-the-recyclerview"
+class CodePagerFragment : BaseFragment() {
+    var url = "https://guides.codepath.com/android/Using-an-ArrayAdapter-with-ListView"
     private lateinit var db: FirebaseFirestore
 
     override fun onCreateView(
@@ -28,18 +28,18 @@ class CodeRecyclerFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_code_recycler, container, false)
+        return inflater.inflate(R.layout.fragment_code_pager, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         alertDialog.show()
         db = FirebaseFirestore.getInstance()
-        db.collection("recycler_view").addSnapshotListener { value, error ->
+        db.collection("list_view").addSnapshotListener { value, error ->
             error?.message
             val result = value!!.documents[0].toObject(ModelElements::class.java)
             val sendPicture = try {
-                requireArguments().getString("recycler_view")
+                requireArguments().getString("list_view")
             } catch (e: Exception) {
                 ""
             }

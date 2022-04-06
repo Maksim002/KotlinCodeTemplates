@@ -40,6 +40,7 @@ class GalleryFragment: BaseFragment() {
                     4 -> Navigation.findNavController(view!!).navigate(R.id.buttonFragment)
                     5 -> Navigation.findNavController(view!!).navigate(R.id.listFragment)
                     6 -> Navigation.findNavController(view!!).navigate(R.id.recyclerViewFragment)
+                    7 -> Navigation.findNavController(view!!).navigate(R.id.viewPagerFragment)
                 }
             }
         })
@@ -52,6 +53,7 @@ class GalleryFragment: BaseFragment() {
         list.add(GalleryModel("Button", R.drawable.ic_baseline_touch_app_24))
         list.add(GalleryModel("List View", R.drawable.ic_list))
         list.add(GalleryModel("Recycler View", R.drawable.ic_recycler))
+        list.add(GalleryModel("Pager View", R.drawable.ic_pager))
 
         adapters.update(list)
         recyclerView.adapter = adapters

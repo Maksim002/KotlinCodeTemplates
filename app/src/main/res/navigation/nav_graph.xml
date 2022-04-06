@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_galleryFragment_to_recyclerViewFragment"
             app:destination="@id/recyclerViewFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
     </fragment>
 
 
@@ -177,7 +180,7 @@
 
     <fragment
         android:id="@+id/recyclerViewFragment"
-        android:name="com.example.kotlincodetemplates.ui.RecyclerView.RecyclerViewFragment"
+        android:name="com.example.kotlincodetemplates.ui.recyclerView.RecyclerViewFragment"
         android:label="Recycler View"
         tools:layout="@layout/fragment_recycler_view" >
         <action
@@ -190,14 +193,41 @@
 
     <fragment
         android:id="@+id/codeRecyclerFragment"
-        android:name="com.example.kotlincodetemplates.ui.RecyclerView.CodeRecyclerFragment"
+        android:name="com.example.kotlincodetemplates.ui.recyclerView.CodeRecyclerFragment"
         android:label="Code Recycler"
         tools:layout="@layout/fragment_code_recycler" >
     </fragment>
 
     <fragment
         android:id="@+id/codeRecyclerDisplayFragment"
-        android:name="com.example.kotlincodetemplates.ui.RecyclerView.CodeRecyclerDisplayFragment"
+        android:name="com.example.kotlincodetemplates.ui.recyclerView.CodeRecyclerDisplayFragment"
         android:label="Recycler Presenter"
         tools:layout="@layout/fragment_code_recycler_display" />
+
+
+
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.kotlincodetemplates.ui.pager.ViewPagerFragment"
+        android:label="Pager View"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_codePagerFragment"
+            app:destination="@id/codePagerFragment" />
+        <action
+            android:id="@+id/action_viewPagerFragment_to_codeDisplayPagerFragment"
+            app:destination="@id/codeDisplayPagerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/codePagerFragment"
+        android:name="com.example.kotlincodetemplates.ui.pager.CodePagerFragment"
+        android:label="Code Pager"
+        tools:layout="@layout/fragment_code_pager" />
+
+    <fragment
+        android:id="@+id/codeDisplayPagerFragment"
+        android:name="com.example.kotlincodetemplates.ui.pager.CodeDisplayPagerFragment"
+        android:label="Pager Presenter"
+        tools:layout="@layout/fragment_code_display_pager" />
 </navigation>
