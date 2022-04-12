@@ -34,6 +34,9 @@
         <action
             android:id="@+id/action_galleryFragment_to_viewPagerFragment"
             app:destination="@id/viewPagerFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_onClickFragment"
+            app:destination="@id/onClickFragment" />
     </fragment>
 
 
@@ -230,4 +233,31 @@
         android:name="com.example.kotlincodetemplates.ui.pager.CodeDisplayPagerFragment"
         android:label="Pager Presenter"
         tools:layout="@layout/fragment_code_display_pager" />
+
+
+
+    <fragment
+        android:id="@+id/onClickFragment"
+        android:name="com.example.kotlincodetemplates.ui.click.OnClickFragment"
+        android:label="fragment_on_click"
+        tools:layout="@layout/fragment_on_click" >
+        <action
+            android:id="@+id/action_onClickFragment_to_codeFragment"
+            app:destination="@id/codeFragment" />
+        <action
+            android:id="@+id/action_onClickFragment_to_codeClickDisplayFragment"
+            app:destination="@id/codeClickDisplayFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/codeClickDisplayFragment"
+        android:name="com.example.kotlincodetemplates.ui.click.CodeClickDisplayFragment"
+        android:label="Click View"
+        tools:layout="@layout/fragment_code_click_display" />
+
+    <fragment
+        android:id="@+id/codeFragment"
+        android:name="com.example.kotlincodetemplates.ui.click.CodeFragment"
+        android:label="fragment_code"
+        tools:layout="@layout/fragment_code" />
 </navigation>

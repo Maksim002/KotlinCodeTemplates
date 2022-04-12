@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutGeneral"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8300153E"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutTransition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/transitionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilPersonnelNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Above the word"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+            tools:ignore="HardcodedText,PrivateResource">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPersonnelNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:inputType="text"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:text="Click"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/ilPersonnelNumber"
+            app:layout_constraintStart_toStartOf="@+id/ilPersonnelNumber"
+            app:layout_constraintTop_toBottomOf="@id/ilPersonnelNumber"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Your answer"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+            tools:ignore="HardcodedText,PrivateResource">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/resultEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:inputType="text"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonResult"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:text="Refund"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/ilPersonnelNumber"
+            app:layout_constraintStart_toStartOf="@+id/ilPersonnelNumber"
+            app:layout_constraintTop_toBottomOf="@id/ilPersonnelNumber"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</LinearLayout>
