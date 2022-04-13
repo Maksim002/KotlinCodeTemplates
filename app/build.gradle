@@ -69,4 +69,8 @@ dependencies {
     // Toothpick
     implementation "com.github.stephanenicolas.toothpick:ktp:3.1.0"
     kapt "com.github.stephanenicolas.toothpick:toothpick-compiler:3.1.0"
+
+
+    //toast
+    implementation 'com.github.emreesen27:Android-Custom-Toast-Message:1.0.4'
 }

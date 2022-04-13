@@ -42,6 +42,7 @@ class GalleryFragment: BaseFragment() {
                     6 -> Navigation.findNavController(view!!).navigate(R.id.recyclerViewFragment)
                     7 -> Navigation.findNavController(view!!).navigate(R.id.viewPagerFragment)
                     8 -> Navigation.findNavController(view!!).navigate(R.id.onClickFragment)
+                    9 -> Navigation.findNavController(view!!).navigate(R.id.toastViewFragment)
                 }
             }
         })
@@ -56,6 +57,7 @@ class GalleryFragment: BaseFragment() {
         list.add(GalleryModel("Recycler View", R.drawable.ic_recycler))
         list.add(GalleryModel("Pager View", R.drawable.ic_pager))
         list.add(GalleryModel("On Click", R.drawable.ic_click))
+        list.add(GalleryModel("Toast View", R.drawable.ic_toast))
 
         adapters.update(list)
         recyclerView.adapter = adapters

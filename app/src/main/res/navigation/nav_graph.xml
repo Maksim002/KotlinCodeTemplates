@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_galleryFragment_to_onClickFragment"
             app:destination="@id/onClickFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_toastViewFragment"
+            app:destination="@id/toastViewFragment" />
     </fragment>
 
 
@@ -260,4 +263,28 @@
         android:name="com.example.kotlincodetemplates.ui.click.CodeFragment"
         android:label="fragment_code"
         tools:layout="@layout/fragment_code" />
+
+
+    <fragment
+        android:id="@+id/toastViewFragment"
+        android:name="com.example.kotlincodetemplates.ui.toast.ToastViewFragment"
+        android:label="fragment_toast_view"
+        tools:layout="@layout/fragment_toast_view" >
+        <action
+            android:id="@+id/action_toastViewFragment_to_codeToastFragment"
+            app:destination="@id/codeToastFragment" />
+        <action
+            android:id="@+id/action_toastViewFragment_to_codeDisplayFragment"
+            app:destination="@id/codeDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/codeToastFragment"
+        android:name="com.example.kotlincodetemplates.ui.toast.CodeToastFragment"
+        android:label="fragment_code_toast"
+        tools:layout="@layout/fragment_code_toast" />
+    <fragment
+        android:id="@+id/codeDisplayFragment"
+        android:name="com.example.kotlincodetemplates.ui.toast.CodeDisplayToastFragment"
+        android:label="Toast View"
+        tools:layout="@layout/fragment_code_toast_display" />
 </navigation>
