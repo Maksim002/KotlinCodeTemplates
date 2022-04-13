@@ -28,6 +28,7 @@ class CodeClickDisplayFragment : BaseFragment() {
             resultText.text = etPersonnelNumber.text
             resultEdit.setText("")
             layoutGeneral.setBackgroundColor(resources.getColor(R.color.light_green_color))
+            resultEdit.requestFocus()
         }
 
         buttonResult.setOnClickListener {
@@ -36,6 +37,7 @@ class CodeClickDisplayFragment : BaseFragment() {
             transitionText.text = resultEdit.text
             etPersonnelNumber.setText("")
             layoutGeneral.setBackgroundColor(resources.getColor(R.color.blue_color))
+            etPersonnelNumber.requestFocus()
         }
     }
 }

@@ -35,11 +35,11 @@ class CodeFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
         alertDialog.show()
         db = FirebaseFirestore.getInstance()
-        db.collection("recycler_view").addSnapshotListener { value, error ->
+        db.collection("click_view").addSnapshotListener { value, error ->
             error?.message
             val result = value!!.documents[0].toObject(ModelElements::class.java)
             val sendPicture = try {
-                requireArguments().getString("recycler_view")
+                requireArguments().getString("click_view")
             } catch (e: Exception) {
                 ""
             }

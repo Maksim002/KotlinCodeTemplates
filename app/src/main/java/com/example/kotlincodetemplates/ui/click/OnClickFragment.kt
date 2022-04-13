@@ -24,13 +24,13 @@ class OnClickFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         codeBtn.setOnClickListener {
-            bundle.putString("recycler_view", "code")
-            findNavController().navigate(R.id.codeRecyclerFragment, bundle)
+            bundle.putString("click_view", "code")
+            findNavController().navigate(R.id.codeFragment, bundle)
         }
 
         xmlBtn.setOnClickListener {
-            bundle.putString("recycler_view", "xml")
-            findNavController().navigate(R.id.codeRecyclerFragment, bundle)
+            bundle.putString("click_view", "xml")
+            findNavController().navigate(R.id.codeFragment, bundle)
         }
 
         progressDisplayBtn.setOnClickListener {
@@ -38,8 +38,8 @@ class OnClickFragment : BaseFragment() {
         }
 
         releaseBtn.setOnClickListener {
-            bundle.putString("recycler_view", "start")
-            findNavController().navigate(R.id.codeRecyclerFragment, bundle)
+            bundle.putString("click_view", "start")
+            findNavController().navigate(R.id.codeFragment, bundle)
         }
     }
 }
