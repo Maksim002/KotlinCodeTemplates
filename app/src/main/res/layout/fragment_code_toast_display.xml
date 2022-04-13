@@ -8,13 +8,14 @@
     android:gravity="center_vertical|center_horizontal">
 
     <Button
+        android:id="@+id/normalButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="normalToast"
         android:text="normal"
         tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
+        android:id="@+id/customButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="custom"
