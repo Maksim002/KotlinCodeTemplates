@@ -1,14 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/darkBlack"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CodeToastFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/codeTextProgress"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="16dp"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:text="@string/structure_code_title"/>
 
-</FrameLayout>
+    <com.pddstudio.highlightjs.HighlightJsView
+        android:id="@+id/codeViewHighProgress"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/xmlTextProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="16dp"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:text="@string/structure_style_title"/>
+
+    <com.pddstudio.highlightjs.HighlightJsView
+        android:id="@+id/xmlViewHighProgress"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <WebView
+        android:id="@+id/webViewStile"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+</LinearLayout>

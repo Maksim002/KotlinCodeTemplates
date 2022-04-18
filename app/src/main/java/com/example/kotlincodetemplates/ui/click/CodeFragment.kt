@@ -20,7 +20,7 @@ import com.pddstudio.highlightjs.models.Theme
 import kotlinx.android.synthetic.main.fragment_code.*
 
 class CodeFragment : BaseFragment() {
-    var url = "https://guides.codepath.com/android/using-the-recyclerview"
+    var url = "https://guides.codepath.com/android/Basic-Event-Listeners"
     private lateinit var db: FirebaseFirestore
 
     override fun onCreateView(

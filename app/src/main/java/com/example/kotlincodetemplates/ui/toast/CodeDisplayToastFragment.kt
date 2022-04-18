@@ -24,22 +24,15 @@ class CodeDisplayToastFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         normalToast(normalButton)
         customToast(customButton)
     }
     private fun normalToast(view: View) {
         view.setOnClickListener {
-            val type = ResourcesCompat.getFont(requireContext(), R.font.example)
             SnToast.Standard()
                 .context(requireContext())
                 .type(Type.SUCCESS)
-                .message("Success !") //.typeface(type) Optional Default: sans-serif-condensed
-                //.cancelable(false or true) Optional Default: False
-                // .iconSize(int size) Optional Default: 34dp
-                // .textSize(int size) Optional Default 18sp
-                // .animation(false or true) Optional Default: True
-                // .duration(int ms) Optional Default: 3000ms
+                .message("You did the right thing by choosing our course !")
                 .build()
         }
     }
@@ -52,13 +45,8 @@ class CodeDisplayToastFragment : BaseFragment() {
                 .backgroundColor(R.color.teal_200)
                 .textColor(R.color.white)
                 .icon(R.drawable.ic_launcher_foreground)
-                .message("Custom !!!")
-                .typeface(type) //.typeface(type) Optional Default: sans-serif-condensed
-                //.cancelable(false or true) Optional Default: False
-                // .iconSize(int size) Optional Default: 34dp
-                // .textSize(int size) Optional Default 18sp
-                // .animation(false or true) Optional Default: True
-                // .duration(int ms) Optional Default: 3000ms
+                .message("Eat your corn, too, will grow !!!")
+                .typeface(type)
                 .build()
         }
     }

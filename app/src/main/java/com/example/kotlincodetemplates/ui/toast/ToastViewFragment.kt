@@ -24,12 +24,12 @@ class ToastViewFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         codeBtn.setOnClickListener {
-            bundle.putString("recycler_view", "code")
+            bundle.putString("code_toast", "code")
             findNavController().navigate(R.id.codeToastFragment, bundle)
         }
 
         xmlBtn.setOnClickListener {
-            bundle.putString("recycler_view", "xml")
+            bundle.putString("code_toast", "xml")
             findNavController().navigate(R.id.codeToastFragment, bundle)
         }
 
@@ -38,7 +38,7 @@ class ToastViewFragment : BaseFragment() {
         }
 
         releaseBtn.setOnClickListener {
-            bundle.putString("recycler_view", "start")
+            bundle.putString("code_toast", "start")
             findNavController().navigate(R.id.codeToastFragment, bundle)
         }
     }
