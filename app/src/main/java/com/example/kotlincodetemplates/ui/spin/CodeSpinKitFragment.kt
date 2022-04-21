@@ -20,7 +20,7 @@ import com.pddstudio.highlightjs.models.Theme
 import kotlinx.android.synthetic.main.fragment_code_spin_kit.*
 
 class CodeSpinKitFragment : BaseFragment() {
-    var url = "https://medium.com/mindorks/android-design-shimmer-effect-fa7f74c68a93"
+    var url = "https://github.com/ybq/Android-SpinKit"
     private lateinit var db: FirebaseFirestore
 
     override fun onCreateView(
@@ -35,11 +35,11 @@ class CodeSpinKitFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
         alertDialog.show()
         db = FirebaseFirestore.getInstance()
-        db.collection("shimmer_view").addSnapshotListener { value, error ->
+        db.collection("Spin_kit").addSnapshotListener { value, error ->
             error?.message
             val result = value!!.documents[0].toObject(ModelElements::class.java)
             val sendPicture = try {
-                requireArguments().getString("shimmer_view")
+                requireArguments().getString("Spin_kit")
             } catch (e: Exception) {
                 ""
             }

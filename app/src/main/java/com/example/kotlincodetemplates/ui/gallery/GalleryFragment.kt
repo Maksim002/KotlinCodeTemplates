@@ -63,7 +63,7 @@ class GalleryFragment: BaseFragment() {
         list.add(GalleryModel("Toast View", R.drawable.ic_toast))
         list.add(GalleryModel("Toast View", R.drawable.ic_shimmer))
         list.add(GalleryModel("Spin Kit View", R.drawable.ic_spin_kit))
-        list.add(GalleryModel("Spin Kit View", R.drawable.ic_gif_loading))
+        list.add(GalleryModel("Gif View", R.drawable.ic_gif_loading))
 
         adapters.update(list)
         recyclerView.adapter = adapters

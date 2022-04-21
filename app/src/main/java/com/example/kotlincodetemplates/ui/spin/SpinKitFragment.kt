@@ -25,12 +25,12 @@ class SpinKitFragment : BaseFragment() {
 
         codeBtn.setOnClickListener {
             bundle.putString("Spin_kit", "code")
-            findNavController().navigate(R.id.codeShimmerFragment, bundle)
+            findNavController().navigate(R.id.codeSpinKitFragment, bundle)
         }
 
         xmlBtn.setOnClickListener {
             bundle.putString("Spin_kit", "xml")
-            findNavController().navigate(R.id.codeShimmerFragment, bundle)
+            findNavController().navigate(R.id.codeSpinKitFragment, bundle)
         }
 
         progressDisplayBtn.setOnClickListener {
@@ -39,7 +39,7 @@ class SpinKitFragment : BaseFragment() {
 
         releaseBtn.setOnClickListener {
             bundle.putString("Spin_kit", "start")
-            findNavController().navigate(R.id.codeShimmerFragment, bundle)
+            findNavController().navigate(R.id.codeSpinKitFragment, bundle)
         }
     }
 }

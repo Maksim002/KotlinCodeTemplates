@@ -20,7 +20,7 @@ import com.pddstudio.highlightjs.models.Theme
 import kotlinx.android.synthetic.main.fragment_code_gif.*
 
 class CodeGifFragment : BaseFragment() {
-    var url = "https://github.com/ybq/Android-SpinKit"
+    var url = "https://github.com/koral--/android-gif-drawable"
     private lateinit var db: FirebaseFirestore
 
     override fun onCreateView(

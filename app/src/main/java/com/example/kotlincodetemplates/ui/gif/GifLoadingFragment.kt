@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.kotlincodetemplates.R
 import com.example.kotlincodetemplates.base.BaseFragment
-import kotlinx.android.synthetic.main.fragment_gif_loading.*
+import kotlinx.android.synthetic.main.fragment_shimmer.*
 
 class GifLoadingFragment : BaseFragment() {
     private val bundle = Bundle()
@@ -25,12 +25,12 @@ class GifLoadingFragment : BaseFragment() {
 
         codeBtn.setOnClickListener {
             bundle.putString("shimmer_view", "code")
-            findNavController().navigate(R.id.codeShimmerFragment, bundle)
+            findNavController().navigate(R.id.codeGifFragment, bundle)
         }
 
         xmlBtn.setOnClickListener {
             bundle.putString("shimmer_view", "xml")
-            findNavController().navigate(R.id.codeShimmerFragment, bundle)
+            findNavController().navigate(R.id.codeGifFragment, bundle)
         }
 
         progressDisplayBtn.setOnClickListener {
@@ -39,7 +39,7 @@ class GifLoadingFragment : BaseFragment() {
 
         releaseBtn.setOnClickListener {
             bundle.putString("shimmer_view", "start")
-            findNavController().navigate(R.id.codeShimmerFragment, bundle)
+            findNavController().navigate(R.id.codeGifFragment, bundle)
         }
     }
 }
