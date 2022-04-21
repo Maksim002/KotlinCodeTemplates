@@ -73,4 +73,15 @@ dependencies {
 
     //toast
     implementation 'com.github.emreesen27:Android-Custom-Toast-Message:1.0.4'
+
+    //ShimmerLayout
+    implementation 'io.supercharge:shimmerlayout:2.1.0'
+
+    //Android-SpinKit
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    //GifLoadingView
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
+    api 'fr.tvbarthel.blurdialogfragment:lib:2.2.0'
+
 }

@@ -43,6 +43,9 @@ class GalleryFragment: BaseFragment() {
                     7 -> Navigation.findNavController(view!!).navigate(R.id.viewPagerFragment)
                     8 -> Navigation.findNavController(view!!).navigate(R.id.onClickFragment)
                     9 -> Navigation.findNavController(view!!).navigate(R.id.toastViewFragment)
+                    10 -> Navigation.findNavController(view!!).navigate(R.id.shimmerFragment)
+                    11 -> Navigation.findNavController(view!!).navigate(R.id.spinKitFragment)
+                    12 -> Navigation.findNavController(view!!).navigate(R.id.gifLoadingFragment)
                 }
             }
         })
@@ -58,6 +61,9 @@ class GalleryFragment: BaseFragment() {
         list.add(GalleryModel("Pager View", R.drawable.ic_pager))
         list.add(GalleryModel("On Click", R.drawable.ic_click))
         list.add(GalleryModel("Toast View", R.drawable.ic_toast))
+        list.add(GalleryModel("Toast View", R.drawable.ic_shimmer))
+        list.add(GalleryModel("Spin Kit View", R.drawable.ic_spin_kit))
+        list.add(GalleryModel("Spin Kit View", R.drawable.ic_gif_loading))
 
         adapters.update(list)
         recyclerView.adapter = adapters

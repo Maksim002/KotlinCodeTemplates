@@ -40,6 +40,15 @@
         <action
             android:id="@+id/action_galleryFragment_to_toastViewFragment"
             app:destination="@id/toastViewFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_shimmerFragment"
+            app:destination="@id/shimmerFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_spinKitFragment"
+            app:destination="@id/spinKitFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_gifLoadingFragment"
+            app:destination="@id/gifLoadingFragment" />
     </fragment>
 
 
@@ -242,7 +251,7 @@
     <fragment
         android:id="@+id/onClickFragment"
         android:name="com.example.kotlincodetemplates.ui.click.OnClickFragment"
-        android:label="fragment_on_click"
+        android:label="Click View"
         tools:layout="@layout/fragment_on_click" >
         <action
             android:id="@+id/action_onClickFragment_to_codeFragment"
@@ -255,20 +264,20 @@
     <fragment
         android:id="@+id/codeClickDisplayFragment"
         android:name="com.example.kotlincodetemplates.ui.click.CodeClickDisplayFragment"
-        android:label="Click View"
+        android:label="Click Presenter"
         tools:layout="@layout/fragment_code_click_display" />
 
     <fragment
         android:id="@+id/codeFragment"
         android:name="com.example.kotlincodetemplates.ui.click.CodeFragment"
-        android:label="fragment_code"
+        android:label="Code Click"
         tools:layout="@layout/fragment_code" />
 
 
     <fragment
         android:id="@+id/toastViewFragment"
         android:name="com.example.kotlincodetemplates.ui.toast.ToastViewFragment"
-        android:label="fragment_toast_view"
+        android:label="Toast View"
         tools:layout="@layout/fragment_toast_view" >
         <action
             android:id="@+id/action_toastViewFragment_to_codeToastFragment"
@@ -280,11 +289,84 @@
     <fragment
         android:id="@+id/codeToastFragment"
         android:name="com.example.kotlincodetemplates.ui.toast.CodeToastFragment"
-        android:label="fragment_code_toast"
+        android:label="Code Toast"
         tools:layout="@layout/fragment_code_toast" />
     <fragment
         android:id="@+id/codeDisplayFragment"
         android:name="com.example.kotlincodetemplates.ui.toast.CodeDisplayToastFragment"
-        android:label="Toast View"
+        android:label="Toast Presenter"
         tools:layout="@layout/fragment_code_toast_display" />
+
+
+
+    <fragment
+        android:id="@+id/shimmerFragment"
+        android:name="com.example.kotlincodetemplates.ui.shimmer.ShimmerFragment"
+        android:label="Shimmer View"
+        tools:layout="@layout/fragment_shimmer" >
+        <action
+            android:id="@+id/action_shimmerFragment_to_codeShimmerFragment"
+            app:destination="@id/codeShimmerFragment" />
+        <action
+            android:id="@+id/action_shimmerFragment_to_shimmerDisplayFragment"
+            app:destination="@id/shimmerDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/codeShimmerFragment"
+        android:name="com.example.kotlincodetemplates.ui.shimmer.CodeShimmerFragment"
+        android:label="Code Shimmer"
+        tools:layout="@layout/fragment_code_shimmer"/>
+    <fragment
+        android:id="@+id/shimmerDisplayFragment"
+        android:name="com.example.kotlincodetemplates.ui.shimmer.ShimmerDisplayFragment"
+        android:label="Shimmer Presenter"
+        tools:layout="@layout/fragment_shimmer_display" />
+
+
+    <fragment
+        android:id="@+id/spinKitFragment"
+        android:name="com.example.kotlincodetemplates.ui.spin.SpinKitFragment"
+        android:label="fragment_spin_kit"
+        tools:layout="@layout/fragment_spin_kit" >
+        <action
+            android:id="@+id/action_spinKitFragment_to_codeSpinKitFragment"
+            app:destination="@id/codeSpinKitFragment" />
+        <action
+            android:id="@+id/action_spinKitFragment_to_dispalySpinKitFragment"
+            app:destination="@id/displaySpinKitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/codeSpinKitFragment"
+        android:name="com.example.kotlincodetemplates.ui.spin.CodeSpinKitFragment"
+        android:label="fragment_code_spin_kit"
+        tools:layout="@layout/fragment_code_spin_kit"/>
+    <fragment
+        android:id="@+id/displaySpinKitFragment"
+        android:name="com.example.kotlincodetemplates.ui.spin.DisplaySpinKitFragment"
+        android:label="fragment_dispaly_spin_kit"
+        tools:layout="@layout/fragment_dispaly_spin_kit" />
+
+
+    <fragment
+        android:id="@+id/gifLoadingFragment"
+        android:name="com.example.kotlincodetemplates.ui.gif.GifLoadingFragment"
+        android:label="fragment_gif_loading"
+        tools:layout="@layout/fragment_gif_loading" >
+        <action
+            android:id="@+id/action_gifLoadingFragment_to_codeGifFragment"
+            app:destination="@id/codeGifFragment" />
+        <action
+            android:id="@+id/action_gifLoadingFragment_to_displayGifFragment"
+            app:destination="@id/displayGifFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/codeGifFragment"
+        android:name="com.example.kotlincodetemplates.ui.gif.CodeGifFragment"
+        android:label="fragment_code_gif"
+        tools:layout="@layout/fragment_code_gif" />
+    <fragment
+        android:id="@+id/displayGifFragment"
+        android:name="com.example.kotlincodetemplates.ui.gif.DisplayGifFragment"
+        android:label="Gif Presenter"
+        tools:layout="@layout/fragment_display_gif" />
 </navigation>

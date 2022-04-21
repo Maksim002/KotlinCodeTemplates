@@ -3,12 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/drawable-v24/background.xml" value="0.1555" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/drawable/avatar_background.xml" value="0.1555" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/drawable/background.xml" value="0.1555" />
         <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/fragment_code.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/fragment_code_click_display.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/fragment_code_gif.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/fragment_code_shimmer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/fragment_code_spin_kit.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/fragment_code_toast.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/fragment_code_toast_display.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/fragment_dispaly_spin_kit.xml" value="0.21180555555555555" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/fragment_display_gif.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/fragment_gif_loading.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/fragment_recycler_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/fragment_shimmer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/fragment_shimmer_display.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/fragment_spin_kit.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/fragment_toast_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/gifloading_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/layout/layout_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates/app/src/main/res/drawable/ic_baseline_grass_24.xml" value="0.1455" />
         <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates/app/src/main/res/drawable/splash_screen.xml" value="0.1335" />
         <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />

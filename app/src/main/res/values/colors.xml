@@ -10,6 +10,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#AF0000</color>
     <color name="grey">#00B507</color>
+    <color name="shimmer_background_color">#b1b1b1</color>
 
     <color name="blue_color">#8300153E</color>
     <color name="light_green_color">#006C62</color>
