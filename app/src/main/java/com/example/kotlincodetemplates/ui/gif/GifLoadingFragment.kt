@@ -24,12 +24,12 @@ class GifLoadingFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         codeBtn.setOnClickListener {
-            bundle.putString("shimmer_view", "code")
+            bundle.putString("gif_view", "code")
             findNavController().navigate(R.id.codeGifFragment, bundle)
         }
 
         xmlBtn.setOnClickListener {
-            bundle.putString("shimmer_view", "xml")
+            bundle.putString("gif_view", "xml")
             findNavController().navigate(R.id.codeGifFragment, bundle)
         }
 
@@ -38,7 +38,7 @@ class GifLoadingFragment : BaseFragment() {
         }
 
         releaseBtn.setOnClickListener {
-            bundle.putString("shimmer_view", "start")
+            bundle.putString("gif_view", "start")
             findNavController().navigate(R.id.codeGifFragment, bundle)
         }
     }

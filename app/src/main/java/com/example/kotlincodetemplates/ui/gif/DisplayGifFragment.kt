@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_display_gif.*
 
 open class DisplayGifFragment : Fragment() {
 
-    var IDS = intArrayOf(
+    private var IDS = intArrayOf(
         R.drawable.num0, R.drawable.num1, R.drawable.num2, R.drawable.num3, R.drawable.num4,
         R.drawable.num5, R.drawable.num6, R.drawable.num7, R.drawable.num8, R.drawable.num9,
         R.drawable.num10, R.drawable.num11, R.drawable.num12, R.drawable.num13, R.drawable.num14,

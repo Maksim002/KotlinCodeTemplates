@@ -35,11 +35,11 @@ class CodeGifFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
         alertDialog.show()
         db = FirebaseFirestore.getInstance()
-        db.collection("Spin_kit").addSnapshotListener { value, error ->
+        db.collection("gif_view").addSnapshotListener { value, error ->
             error?.message
             val result = value!!.documents[0].toObject(ModelElements::class.java)
             val sendPicture = try {
-                requireArguments().getString("Spin_kit")
+                requireArguments().getString("gif_view")
             } catch (e: Exception) {
                 ""
             }
