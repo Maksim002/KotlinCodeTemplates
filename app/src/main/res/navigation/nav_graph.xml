@@ -49,6 +49,9 @@
         <action
             android:id="@+id/action_galleryFragment_to_gifLoadingFragment"
             app:destination="@id/gifLoadingFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_pdfFileFragment"
+            app:destination="@id/pdfFileFragment" />
     </fragment>
 
 
@@ -326,7 +329,7 @@
     <fragment
         android:id="@+id/spinKitFragment"
         android:name="com.example.kotlincodetemplates.ui.spin.SpinKitFragment"
-        android:label="fragment_spin_kit"
+        android:label="Spin Kit View"
         tools:layout="@layout/fragment_spin_kit" >
         <action
             android:id="@+id/action_spinKitFragment_to_codeSpinKitFragment"
@@ -338,19 +341,19 @@
     <fragment
         android:id="@+id/codeSpinKitFragment"
         android:name="com.example.kotlincodetemplates.ui.spin.CodeSpinKitFragment"
-        android:label="fragment_code_spin_kit"
+        android:label="Code Spi Kit"
         tools:layout="@layout/fragment_code_spin_kit"/>
     <fragment
         android:id="@+id/displaySpinKitFragment"
         android:name="com.example.kotlincodetemplates.ui.spin.DisplaySpinKitFragment"
-        android:label="fragment_dispaly_spin_kit"
+        android:label="Spin Kit Presenter"
         tools:layout="@layout/fragment_dispaly_spin_kit" />
 
 
     <fragment
         android:id="@+id/gifLoadingFragment"
         android:name="com.example.kotlincodetemplates.ui.gif.GifLoadingFragment"
-        android:label="fragment_gif_loading"
+        android:label="Gif View"
         tools:layout="@layout/fragment_gif_loading" >
         <action
             android:id="@+id/action_gifLoadingFragment_to_codeGifFragment"
@@ -362,11 +365,35 @@
     <fragment
         android:id="@+id/codeGifFragment"
         android:name="com.example.kotlincodetemplates.ui.gif.CodeGifFragment"
-        android:label="fragment_code_gif"
+        android:label="Code Gif"
         tools:layout="@layout/fragment_code_gif" />
     <fragment
         android:id="@+id/displayGifFragment"
         android:name="com.example.kotlincodetemplates.ui.gif.DisplayGifFragment"
         android:label="Gif Presenter"
         tools:layout="@layout/fragment_display_gif" />
+
+
+    <fragment
+        android:id="@+id/pdfFileFragment"
+        android:name="com.example.kotlincodetemplates.ui.pdf.PdfFileFragment"
+        android:label="Pdf View"
+        tools:layout="@layout/fragment_pdf_file" >
+        <action
+            android:id="@+id/action_pdfFileFragment_to_codePdfFragment"
+            app:destination="@id/codePdfFragment" />
+        <action
+            android:id="@+id/action_pdfFileFragment_to_codePdfDisplayFragment"
+            app:destination="@id/codePdfDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/codePdfFragment"
+        android:name="com.example.kotlincodetemplates.ui.pdf.CodePdfFragment"
+        android:label="Code Pdf"
+        tools:layout="@layout/fragment_code_pdf" />
+    <fragment
+        android:id="@+id/codePdfDisplayFragment"
+        android:name="com.example.kotlincodetemplates.ui.pdf.CodePdfDisplayFragment"
+        android:label="Pdf Presenter"
+        tools:layout="@layout/fragment_code_pdf_display" />
 </navigation>

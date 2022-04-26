@@ -32,6 +32,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src\\main\\assets'
+            }
+        }
+    }
 }
 
 dependencies {
@@ -84,4 +91,6 @@ dependencies {
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
     api 'fr.tvbarthel.blurdialogfragment:lib:2.2.0'
 
+    //Android PdfViewer
+    implementation 'com.github.afreakyelf:Pdf-Viewer:v1.0.7'
 }

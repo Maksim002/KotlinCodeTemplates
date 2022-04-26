@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/hotelPdf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="26dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/circle_background_bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_hotel"
+            android:layout_weight="1"
+            tools:ignore="ContentDescription,NestedWeights" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Pdf file to read about hotels"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/androidPdf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="26dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/circle_background_bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_android_im"
+            android:layout_weight="1"
+            tools:ignore="ContentDescription,InefficientWeight,NestedWeights" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Pdf file for displaying information"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</LinearLayout>
