@@ -52,6 +52,9 @@
         <action
             android:id="@+id/action_galleryFragment_to_pdfFileFragment"
             app:destination="@id/pdfFileFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
 
 
@@ -396,4 +399,28 @@
         android:name="com.example.kotlincodetemplates.ui.pdf.CodePdfDisplayFragment"
         android:label="Pdf Presenter"
         tools:layout="@layout/fragment_code_pdf_display" />
+
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.kotlincodetemplates.ui.menuBar.MenuFragment"
+        android:label="Code View"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_codeMenuFragment"
+            app:destination="@id/codeMenuFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_codeMenuDisplayFragment"
+            app:destination="@id/codeMenuDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/codeMenuFragment"
+        android:name="com.example.kotlincodetemplates.ui.menuBar.CodeMenuFragment"
+        android:label="Code Menu"
+        tools:layout="@layout/fragment_code_menu" />
+    <fragment
+        android:id="@+id/codeMenuDisplayFragment"
+        android:name="com.example.kotlincodetemplates.ui.menuBar.CodeMenuDisplayFragment"
+        android:label="Menu Presenter"
+        tools:layout="@layout/fragment_code_menu_display" />
 </navigation>

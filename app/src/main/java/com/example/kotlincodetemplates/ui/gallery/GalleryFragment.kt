@@ -47,6 +47,7 @@ class GalleryFragment: BaseFragment() {
                     11 -> Navigation.findNavController(view!!).navigate(R.id.spinKitFragment)
                     12 -> Navigation.findNavController(view!!).navigate(R.id.gifLoadingFragment)
                     13 -> Navigation.findNavController(view!!).navigate(R.id.pdfFileFragment)
+                    14 -> Navigation.findNavController(view!!).navigate(R.id.menuFragment)
                 }
             }
         })
@@ -66,6 +67,7 @@ class GalleryFragment: BaseFragment() {
         list.add(GalleryModel("Spin Kit View", R.drawable.ic_spin_kit))
         list.add(GalleryModel("Gif View", R.drawable.ic_gif_loading))
         list.add(GalleryModel("Pdf View", R.drawable.ic_pdf))
+        list.add(GalleryModel("Menu View", R.drawable.ic_menu))
 
         adapters.update(list)
         recyclerView.adapter = adapters
