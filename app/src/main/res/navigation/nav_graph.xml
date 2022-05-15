@@ -58,6 +58,12 @@
         <action
             android:id="@+id/action_galleryFragment_to_notificationsFragment"
             app:destination="@id/notificationsFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_swipeFragment"
+            app:destination="@id/swipeFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_alertDialogFragment"
+            app:destination="@id/alertDialogFragment" />
     </fragment>
 
 
@@ -450,4 +456,52 @@
         android:name="com.example.kotlincodetemplates.ui.notifications.CodeDisplayNotificationsFragment"
         android:label="Presenter Notifications"
         tools:layout="@layout/fragment_code_display_notifications" />
+
+
+    <fragment
+        android:id="@+id/swipeFragment"
+        android:name="com.example.kotlincodetemplates.ui.swipe.SwipeFragment"
+        android:label="Swipe View"
+        tools:layout="@layout/fragment_swipe" >
+        <action
+            android:id="@+id/action_swipeFragment_to_codeSwipeFragment"
+            app:destination="@id/codeSwipeFragment" />
+        <action
+            android:id="@+id/action_swipeFragment_to_displaySwipeFragment"
+            app:destination="@id/displaySwipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/codeSwipeFragment"
+        android:name="com.example.kotlincodetemplates.ui.swipe.CodeSwipeFragment"
+        android:label="Code Swipe"
+        tools:layout="@layout/fragment_code_swipe" />
+    <fragment
+        android:id="@+id/displaySwipeFragment"
+        android:name="com.example.kotlincodetemplates.ui.swipe.DisplaySwipeFragment"
+        android:label="Swipe Presenter"
+        tools:layout="@layout/fragment_display_swipe" />
+
+
+    <fragment
+        android:id="@+id/alertDialogFragment"
+        android:name="com.example.kotlincodetemplates.ui.alert.AlertDialogFragment"
+        android:label="Alert Dialog"
+        tools:layout="@layout/fragment_alert_dialog" >
+        <action
+            android:id="@+id/action_alertDialogFragment_to_codeAlertFragment"
+            app:destination="@id/codeAlertFragment" />
+        <action
+            android:id="@+id/action_alertDialogFragment_to_alertDisplayFragment"
+            app:destination="@id/alertDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/codeAlertFragment"
+        android:name="com.example.kotlincodetemplates.ui.alert.CodeAlertFragment"
+        android:label="Code Alert"
+        tools:layout="@layout/fragment_code_alert" />
+    <fragment
+        android:id="@+id/alertDisplayFragment"
+        android:name="com.example.kotlincodetemplates.ui.alert.AlertDisplayFragment"
+        android:label="Presenter View"
+        tools:layout="@layout/fragment_alert_display" />
 </navigation>

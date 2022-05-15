@@ -93,4 +93,10 @@ dependencies {
 
     //Android PdfViewer
     implementation 'com.github.afreakyelf:Pdf-Viewer:v1.0.7'
+
+    //swipe
+    implementation 'com.github.sourcerebels:swipe-refresh-progressview:1.0.RC4'
+
+    //AlertDialog
+    implementation 'com.github.TutorialsAndroid:KAlertDialog:v14.0.19'
 }

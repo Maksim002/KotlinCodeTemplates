@@ -3,14 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/drawable/background.xml" value="0.2195" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/adapter_my_recycler_view_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/alert_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/customedittext.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_alert_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_alert_display.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_code_alert.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_code_display_notifications.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_code_gif.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_code_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_code_menu_display.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_code_notifications.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_code_pdf.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_code_shimmer.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_code_swipe.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_display_swipe.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_notifications.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_pdf_file.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_shimmer.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/fragment_swipe.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/layout/item_gallery.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KotlinCodeTemplates-original/app/src/main/res/menu/menu_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates-new/app/src/main/res/drawable-v24/background.xml" value="0.1555" />
@@ -79,6 +92,8 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates/app/src/main/res/layout/item_gallery.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates/app/src/main/res/layout/item_general_model.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/univer/KotlinCodeTemplates/app/src/main/res/layout/layout_blod_list_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/expandable_list_content.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_expandable_list_item_1.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/drawable/circle_background_bottom.xml" value="0.172" />
         <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
