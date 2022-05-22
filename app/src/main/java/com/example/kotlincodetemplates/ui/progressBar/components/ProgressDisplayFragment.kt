@@ -34,7 +34,7 @@ class ProgressDisplayFragment : BaseFragment() {
             myThread = Thread {
                 while (progressStatus < 100) {
                     // update progress status
-                    progressStatus = 1
+                    progressStatus += 1
 
                     // sleep the thread for 100 milliseconds
                     Thread.sleep(100)

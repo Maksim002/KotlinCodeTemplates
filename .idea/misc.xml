@@ -98,8 +98,43 @@
         <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/alert_loading.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_alert_dialog.xml" value="0.23796296296296296" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_alert_display.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_button.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_button_display.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_card_bar.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_card_display.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_card_view.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_alert.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_button.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_click_display.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_display_notifications.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_display_pager.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_gif.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_list_display.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_menu.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_menu_display.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_notifications.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_pager.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_pdf_display.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_progress_bar.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_recycler_display.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_code_scroll.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_dispaly_spin_kit.xml" value="0.23582358235823583" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_display_gif.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_display_swipe.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_gallery.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_gif_loading.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_menu.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_notifications.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_on_click.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_pdf_file.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_scroll_vertical.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_shimmer_display.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_view_pager.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_web_view.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/fragment_xml_scroll.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/UniverRoba/KotlinCodeTemplates/app/src/main/res/layout/item_gallery.xml" value="0.25416666666666665" />
       </map>
