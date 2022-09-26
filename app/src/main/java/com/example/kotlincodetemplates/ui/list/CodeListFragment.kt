@@ -53,7 +53,8 @@ class CodeListFragment : BaseFragment() {
                 "xml" -> {
                     xmlViewHighProgress.theme = Theme.ANDROID_STUDIO
                     xmlViewHighProgress.highlightLanguage = Language.AUTO_DETECT
-                    xmlViewHighProgress.setBackgroundColor(resources.getColor(R.color.darkBlack))
+                    codeViewHighProgress.setBackgroundColor(resources.getColor(R.color.darkBlack))
+                    codeViewHighProgress.setSource(MyConverters.deletingCharacters(result!!.code!!))
                     xmlViewHighProgress.setSource(MyConverters.deletingCharacters(result!!.xml!!))
                 }
                 "start" -> {
