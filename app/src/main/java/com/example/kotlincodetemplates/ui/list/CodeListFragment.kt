@@ -51,10 +51,7 @@ class CodeListFragment : BaseFragment() {
                     codeViewHighProgress.setSource(MyConverters.deletingCharacters(result!!.code!!))
                 }
                 "xml" -> {
-                    xmlViewHighProgress.theme = Theme.ANDROID_STUDIO
-                    xmlViewHighProgress.highlightLanguage = Language.AUTO_DETECT
-                    xmlViewHighProgress.setBackgroundColor(resources.getColor(R.color.darkBlack))
-                    xmlViewHighProgress.setSource(MyConverters.deletingCharacters(result!!.xml!!))
+
                 }
                 "start" -> {
                     initWebView()
